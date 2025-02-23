@@ -8,6 +8,7 @@
             .container{
                   display: flex;
                   gap: 10px;
+                  /* margin-top: 10px; */
             }
             .box{
                   /* background-color: rgba(210, 105, 30, 0.651); */
@@ -15,11 +16,25 @@
                   border-radius: 10px;
                   padding: 14px;
             }
+            .container-2{
+                  display: flex;
+                  gap: 10px;
+                  flex-wrap: wrap;
+            }
+            .item{
+                  width: 200px;
+                  height: 100px;
+                  background-color: rgba(137, 43, 226, 0.596);
+                  border: 2px solid tomato;
+                  border-radius: 10px;
+            }
 
             @media screen and (max-width:576px) {
                   .container{
-                        display: grid;
-                        grid-template-columns: repeat(1, 1fr);
+                        /* display: grid;
+                        grid-template-columns: repeat(1, 1fr); */
+                        flex-direction: column;
+                        
                   }
                   .box{
                         background-color: rgba(236, 75, 17, 0.486);
@@ -28,11 +43,12 @@
 
             @media screen and (min-width:577px) and (max-width:992px) {
                   .container{
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
+                        flex-direction: column;
+                        /* display: grid;
+                        grid-template-columns: repeat(2, 1fr); */
                   }
                   .box{
-                        background-color: rgb(211, 150, 70);
+                        background-color: rgba(211, 150, 70, 0.582);
                   }
             }
       </style>
@@ -56,6 +72,19 @@
                   <h3>Fourth box</h3>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus et, tenetur minus porro eaque, non quam nobis magnam voluptatum dicta quisquam temporibus culpa nostrum voluptas fugit aperiam eligendi ipsum cupiditate.</p>
             </div>
+      </div>
+      <div class="container-2">
+            <!-- .item*10{item - $} -->
+            <div class="item">item - 1</div>
+            <div class="item">item - 2</div>
+            <div class="item">item - 3</div>
+            <div class="item">item - 4</div>
+            <div class="item">item - 5</div>
+            <div class="item">item - 6</div>
+            <div class="item">item - 7</div>
+            <div class="item">item - 8</div>
+            <div class="item">item - 9</div>
+            <div class="item">item - 10</div>
       </div>
 </body>
 </html>
