@@ -26,5 +26,17 @@ img{
 @media screen and (max-width:576px) {
       .row{
             flex-direction: column;
+            height: auto;
+      }
+      .box-collage{
+            grid-template-columns: repeat(1, 1fr);
+      }
+}
+
+/*  Medium device  */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+      .row{
+            flex-direction: column;
+            height: auto;
       }
 }
