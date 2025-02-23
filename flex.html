@@ -4,8 +4,58 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Responsive Flex</title>
+      <style>
+            .container{
+                  display: flex;
+                  gap: 10px;
+            }
+            .box{
+                  /* background-color: rgba(210, 105, 30, 0.651); */
+                  border: 3px solid tomato;
+                  border-radius: 10px;
+                  padding: 14px;
+            }
+
+            @media screen and (max-width:576px) {
+                  .container{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                  }
+                  .box{
+                        background-color: rgba(236, 75, 17, 0.486);
+                  }
+            }
+
+            @media screen and (min-width:577px) and (max-width:992px) {
+                  .container{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                  }
+                  .box{
+                        background-color: rgb(211, 150, 70);
+                  }
+            }
+      </style>
 </head>
 <body>
       <h2>Flexible Flex</h2>
+      <div class="container">
+            <div class="box">
+                  <h3>First box</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, repellat. Facilis reiciendis maxime hic, amet ad iusto iure magni tempore dolorem dolore repudiandae consectetur aliquid voluptatibus accusantium, eligendi laboriosam nulla.</p>
+            </div>
+            <div class="box">
+                  <h3>Second box</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus et, tenetur minus porro eaque, non quam nobis magnam voluptatum dicta quisquam temporibus culpa nostrum voluptas fugit aperiam eligendi ipsum cupiditate.</p>
+            </div>
+            <div class="box">
+                  <h3>Third box</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus et, tenetur minus porro eaque, non quam nobis magnam voluptatum dicta quisquam temporibus culpa nostrum voluptas fugit aperiam eligendi ipsum cupiditate.</p>
+            </div>
+            <div class="box">
+                  <h3>Fourth box</h3>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus et, tenetur minus porro eaque, non quam nobis magnam voluptatum dicta quisquam temporibus culpa nostrum voluptas fugit aperiam eligendi ipsum cupiditate.</p>
+            </div>
+      </div>
 </body>
 </html>
